@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 291);
+/******/ 	return __webpack_require__(__webpack_require__.s = 294);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2355,7 +2355,6 @@ function checkDuplicateKeys(children) {
       duplicateKeys.push({
         name: name + `:key=${key$1}`, id: getUniqueId(component), keyId: len, children: vNodes.reduce((accumulator, vNode, index) => { accumulator.push({ name: vNode.tag, children: [], keyId: `${len}:${index}`, ctor: 'VNode' }); vNodeMap.set(`${len}:${index}`, vNode); return accumulator }, [])
       });
-      window.d1 = duplicateKeys;
     }
   }
 }
@@ -4343,7 +4342,7 @@ function unwrapListeners(arr) {
 
 /***/ }),
 
-/***/ 291:
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12424,7 +12423,7 @@ if (inBrowser) {
 
 /* harmony default export */ __webpack_exports__["a"] = (Vue);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(8), __webpack_require__(75).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(8), __webpack_require__(76).setImmediate))
 
 /***/ }),
 
@@ -12836,7 +12835,7 @@ function clone (object, options) {
 
 /***/ }),
 
-/***/ 75:
+/***/ 76:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -12892,7 +12891,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(76);
+__webpack_require__(77);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -12907,7 +12906,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
