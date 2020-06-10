@@ -1,5 +1,5 @@
 {
-  "name": "Vue.js devtools 增强版",
+  "name": "Vue.js devtools Enhanced",
   "version": "1.0.0",
   "version_name": "1.0.0",
   "description": "在 Vue.js devtools 5.3.3 基础上增加了检查重复key的功能。有助于快速排查重复key导致的bug",
