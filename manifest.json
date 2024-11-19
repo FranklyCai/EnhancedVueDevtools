@@ -1,39 +1,32 @@
 {
   "name": "Enhanced Vue.js devtools",
-  "version": "1.0.0",
-  "version_name": "1.0.0",
-  "description": "This add-on is built on the top of Vue.js devtools 5.3.3. It Adds a panel for checking duplicate keys, helps you to quickly troubleshoot bugs caused by them",
-  "manifest_version": 2,
+  "version": "1.2.0",
+  "version_name": "1.2.0",
+  "description": "This add-on is built on the top of Vue.js devtools 5.3.3. It Adds a panel for checking duplicate keys",
+  "manifest_version": 3,
   "icons": {
     "16": "icons/16.png",
     "48": "icons/48.png",
     "128": "icons/128.png"
   },
-  "browser_action": {
-    "default_icon": {
-      "16": "icons/16-gray.png",
-      "48": "icons/48-gray.png",
-      "128": "icons/128-gray.png"
-    },
-    "default_title": "Enhanced Vue.js devtools",
-    "default_popup": "popups/not-found.html"
-  },
   "web_accessible_resources": [
-    "devtools.html",
-    "devtools-background.html",
-    "build/backend.js"
+    {
+      "resources": [
+        "devtools.html",
+        "devtools-background.html",
+        "build/backend.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ],
   "devtools_page": "devtools-background.html",
   "background": {
-    "scripts": [
-      "build/background.js"
-    ],
-    "persistent": false
+    "persistent": false,
+    "service_worker": "service_worker.js"
   },
   "permissions": [
-    "http://*/*",
-    "https://*/*",
-    "file:///*",
     "contextMenus",
     "storage"
   ],
@@ -56,5 +49,20 @@
       ],
       "run_at": "document_idle"
     }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/16-gray.png",
+      "48": "icons/48-gray.png",
+      "128": "icons/128-gray.png"
+    },
+    "default_title": "Enhanced Vue.js devtools",
+    "default_popup": "popups/not-found.html"
+  },
+  "content_security_policy": {},
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "file:///*"
   ]
 }
