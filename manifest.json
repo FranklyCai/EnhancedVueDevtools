@@ -59,7 +59,9 @@
     "default_title": "Enhanced Vue.js devtools",
     "default_popup": "popups/not-found.html"
   },
-  "content_security_policy": {},
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
   "host_permissions": [
     "http://*/*",
     "https://*/*",
